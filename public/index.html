@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <title>assignment3</title>
+    <style>
+        header {
+            background: whitesmoke;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        footer {
+            background: whitesmoke;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .header-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .gallery-container {
+            background: whitesmoke;
+            margin: 1rem;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .gallery-item h2 {
+            margin: 10px 0;
+        }
+
+        .gallery-item p {
+            font-size: 14px;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Kaito's Favorite Sports - Baseball
+        <img src="/public/images/baseball-bat.png" alt="icon" class="header-icon">
+    </header>
+    <div class="gallery-container">
+        <h1>My Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/public/images/kaito_school.jpeg" alt="Image 1">
+                <h2>Club activities in high school</h2>
+                <p>
+                    This photo is from the opening ceremony of the last tournament of my high school club activity
+                    career.
+                    I was most passionate about baseball in high school.
+                    I spent a lot of time to get to the national tournament in Japan.
+                    As a result, I couldn't make it to the national tournament, but I was able to make a lot of
+                    memories.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="/public/images/kaito_pitcher.jpeg" alt="Image 2">
+                <h2>Club activities in university</h2>
+                <p>
+                    This photo is a picture of my pitching in a university club activity.
+                    I was more focused on having fun than I was in high school.
+                    I was able to make a lot of friends and have a good time.
+                    I was glad that I was able to continue baseball as a hobby in a university.
+
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="/public/images/shoheiOhtani.jpeg" alt="Image 3">
+                <h2>My favorite baseball player</h2>
+                <p>
+                    This is a picture of Shohei Ohtani, MLB player for the Los Angeles dodgers.
+                    He is a two-way player who can pitch and hit.
+                    He is the most popular baseball player in Japan.
+                    I respect him because He's not only a good baseball player, he's a good character.
+                    I would like to see his games in the US someday.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Kaito Saito
+    </footer>
+
+</body>
+
+</html>
